@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>edu.nju</groupId>
-    <artifactId>AsciiPanel-annotation-config</artifactId>
+    <artifactId>AsciiPanel-java-config</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
