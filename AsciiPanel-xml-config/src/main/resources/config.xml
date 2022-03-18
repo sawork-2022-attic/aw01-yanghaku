@@ -50,7 +50,7 @@
     </bean>
 
 
-    <!-- 前面是所有的种类的font实例, 后面可以任意注入到 asciiPanel 实例 -->
+    <!-- 前面是所有的种类的font实例, 后面可以任意注入到 asciiPanelTest 实例 -->
 
     <bean id="asciiPanelTest" class="asciiPanel.AsciiPanel">
         <property name="asciiFont" ref="fontCP437_12x12"/>
