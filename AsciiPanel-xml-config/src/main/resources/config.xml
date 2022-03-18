@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans  http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="fontCP437_8x8" class="asciiPanel.AsciiFont">
+        <constructor-arg index="0" value="cp437_8x8.png"/>
+        <constructor-arg index="1" value="8"/>
+        <constructor-arg index="2" value="8"/>
+    </bean>
+    <bean id="fontCP437_10x10" class="asciiPanel.AsciiFont">
+        <constructor-arg index="0" value="cp437_10x10.png"/>
+        <constructor-arg index="1" value="10"/>
+        <constructor-arg index="2" value="10"/>
+    </bean>
+    <bean id="fontCP437_12x12" class="asciiPanel.AsciiFont">
+        <constructor-arg index="0" value="cp437_12x12.png"/>
+        <constructor-arg index="1" value="12"/>
+        <constructor-arg index="2" value="12"/>
+    </bean>
+    <bean id="fontCP437_16x16" class="asciiPanel.AsciiFont">
+        <constructor-arg index="0" value="cp437_16x16.png"/>
+        <constructor-arg index="1" value="16"/>
+        <constructor-arg index="2" value="16"/>
+    </bean>
+    <bean id="fontCP437_9x16" class="asciiPanel.AsciiFont">
+        <constructor-arg index="0" value="cp437_9x16.png"/>
+        <constructor-arg index="1" value="9"/>
+        <constructor-arg index="2" value="16"/>
+    </bean>
+    <bean id="fontDRAKE_10x10" class="asciiPanel.AsciiFont">
+        <constructor-arg index="0" value="drake_10x10.png"/>
+        <constructor-arg index="1" value="10"/>
+        <constructor-arg index="2" value="10"/>
+    </bean>
+    <bean id="fontTAFFER_10x10" class="asciiPanel.AsciiFont">
+        <constructor-arg index="0" value="taffer_10x10.png"/>
+        <constructor-arg index="1" value="10"/>
+        <constructor-arg index="2" value="10"/>
+    </bean>
+    <bean id="fontQBICFEET_10x10" class="asciiPanel.AsciiFont">
+        <constructor-arg index="0" value="qbicfeet_10x10.png"/>
+        <constructor-arg index="1" value="10"/>
+        <constructor-arg index="2" value="10"/>
+    </bean>
+    <bean id="fontTALRYTH_15_15" class="asciiPanel.AsciiFont">
+        <constructor-arg index="0" value="talryth_square_15x15.png"/>
+        <constructor-arg index="1" value="15"/>
+        <constructor-arg index="2" value="15"/>
+    </bean>
+
+
+    <!-- 前面是所有的种类的font实例, 后面可以任意注入到 asciiPanel 实例 -->
+
+    <bean id="asciiPanelTest" class="asciiPanel.AsciiPanel">
+        <property name="asciiFont" ref="fontCP437_12x12"/>
+        <!--  <property name="asciiFont" ref="fontCP437_16x16"/>  -->
+        <!--  <property name="asciiFont" ref="fontCP437_8x8"/>    -->
+    </bean>
+
+</beans>
